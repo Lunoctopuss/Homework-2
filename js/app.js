@@ -41,7 +41,7 @@ initialPrompt = () => {
 inputColorFunc = () => {
     let varColor = prompt(`Please enter a color blue.`);
     if (colorBlue.includes(varColor.toLowerCase())) {
-        let changeColor = (document.querySelector('body').style.backgroundColor = `blue`);
+        let changeColor = (document.querySelector('body').style.backgroundColor = `#8ecae6`);
         alert("You've changed your background color.");
     } else {
         alert("Incorrect data entered.");

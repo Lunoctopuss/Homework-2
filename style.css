@@ -1,0 +1,19 @@
+div {
+    text-align: center;
+    margin: auto;
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+div img {
+    align-items: auto;
+    width: 350px;
+    height: 300px;
+    border-radius: 3em;
+    box-shadow: 10px 10px 5px #457b9d;
+    -moz-box-shadow: 10px 10px 5px #457b9d;
+    -webkit-box-shadow: 10px 10px 5px #457b9d;
+    -khtml-box-shadow: 10px 10px 5px #457b9d;
+}
