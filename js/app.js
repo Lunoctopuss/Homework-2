@@ -29,3 +29,31 @@ let inputDate3 = alert(`Current date converted to UTC is ${new Date().toISOStrin
 
 // TASK 2
 
+const colorBlue = ['blue'];
+
+initialPrompt = () => {
+    let ans = confirm('Would you like to change your background color?');
+    if (ans) {
+        inputColorFunc();
+    }
+};
+
+inputColorFunc = () => {
+    let varColor = prompt(`Please enter a color blue.`);
+    if (colorBlue.includes(varColor.toLowerCase())) {
+        let changeColor = (document.querySelector('body').style.backgroundColor = `blue`);
+        alert("You've changed your background color.");
+    } else {
+        alert("Incorrect data entered.");
+        initialPrompt();
+    }
+};
+
+initialPrompt();
+
+// TASK 3
+
+
+// let example = document.getElementsByTagName(`h1`)[0].innerHTML;
+// let example = document.querySelector(`div`).style.color = `blue`;
+// let example = (document.querySelector(`.testClass`)[1].style.color = `red`);
