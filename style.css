@@ -1,19 +1,26 @@
 div {
-    text-align: center;
-    margin: auto;
-    margin: auto;
     padding: 80px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
     }
 
 div img {
-    align-items: auto;
     width: 350px;
     height: 300px;
     border-radius: 3em;
-    box-shadow: 10px 10px 5px #457b9d;
-    -moz-box-shadow: 10px 10px 5px #457b9d;
-    -webkit-box-shadow: 10px 10px 5px #457b9d;
-    -khtml-box-shadow: 10px 10px 5px #457b9d;
+    box-shadow: 10px 10px 5px #777373;
+}
+
+div img:hover {
+    filter: opacity(0.5);
+}
+
+.imgclass {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.clicked {
+    opacity: 0.5;
 }

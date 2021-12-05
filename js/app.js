@@ -48,17 +48,33 @@ initialPrompt();
 // TASK 3
 
 
-function funcImg1() {
-    let image_Id = document.getElementById('changePic1');
-    if (image_Id.src.match("https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?cs=srgb&dl=pexels-pixabay-2150.jpg&fm=jpg")) {
-        image_Id.src = "https://images.pexels.com/photos/10325736/pexels-photo-10325736.jpeg?cs=srgb&dl=pexels-eriks-cistovs-10325736.jpg&fm=jpg";
-    }
+function funcImg(element) {
+    const innerImage = element.querySelector('img');
+    if (innerImage) {
+        if (innerImage.classList.contains('clicked')) {
+    innerImage.classList.remove('clicked');
+        }
     else {
-        image_Id.src = "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?cs=srgb&dl=pexels-pixabay-2150.jpg&fm=jpg";
+    innerImage.classList.add('clicked');
+        }
     }
-}   
+}
 
-funcImg1();
+
+
+
+
+
+
+
+// function funcImg1() {
+//     let image_Id = document.getElementById('changePic1');
+//     if (image_Id.className.match("pic1")) {
+//         document.body.style.backgroundColor += 'black';
+//     } else {
+
+//     }
+// }   
 
 // function changeImg (a)
 
