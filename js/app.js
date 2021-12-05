@@ -23,7 +23,7 @@ let inputDate3 = alert(`Current date converted to UTC is ${new Date().toUTCStrin
 
 // TASK 2
 
-const colours = ['blue', 'pink', 'red', 'yellow', 'green', 'orange', 'purple', 'white', 'black'];
+const colours = ['blue', 'pink', 'red', 'yellow', 'green', 'orange', 'purple', 'black'];
 
 initialPrompt = () => {
     let ans = confirm('Would you like to change your background colour?');
@@ -48,40 +48,31 @@ initialPrompt();
 // TASK 3
 
 
-function funcImg(element) {
-    const innerImage = element.querySelector('img');
-    if (innerImage) {
-        if (innerImage.classList.contains('clicked')) {
-    innerImage.classList.remove('clicked');
-        }
-    else {
-    innerImage.classList.add('clicked');
-        }
-    }
-}
+// TRIED TO ADD/REMOVE CLASS BUT FAILED.
 
-
-
-
-
-
-
-
-// function funcImg1() {
-//     let image_Id = document.getElementById('changePic1');
-//     if (image_Id.className.match("pic1")) {
-//         document.body.style.backgroundColor += 'black';
-//     } else {
-
+// function funcImg(element) {
+//         const innerImage = element.querySelector('img');
+//     if (innerImage) {
+//         if (innerImage.classList.contains('clicked')) {
+//     innerImage.classList.remove('clicked');
 //     }
-// }   
+//     else {
+//         innerImage.classList.add('clicked');
+//         }
+//     }
+// }
 
-// function changeImg (a)
 
-// document.getElementById("pic1").addEventListener("click", changePic);
+// USED THIS INSTEAD: https://stackoverflow.com/questions/20147442/using-onclick-on-images-to-display-text
 
-// document.getElementById("testID").style.color = "purple";
 
-// let example = document.getElementsByTagName(`h1`)[0].innerHTML;
-// let example = document.querySelector(`div`).style.color = `blue`;
-// let example = (document.querySelector(`.testClass`)[1].style.color = `red`);
+function funcImg(value) {
+    const div = document.getElementById("div");
+    let text = "";
+
+    if (value == 1) text += "Have";
+    if (value == 2) text += "a great";
+    if (value == 3) text += "day!";
+
+    div.innerHTML = text;
+}

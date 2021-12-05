@@ -1,26 +1,32 @@
 div {
-    padding: 80px;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
     }
 
-div img {
+img {
     width: 350px;
     height: 300px;
-    border-radius: 3em;
-    box-shadow: 10px 10px 5px #777373;
+    border-radius: 1.5em;
+    box-shadow: 10px 10px 25px #000000;
+    transition: 0.4s ease-in-out;
 }
 
-div img:hover {
-    filter: opacity(0.5);
+img:hover {
+    filter: opacity(0.8);
 }
 
-.imgclass {
+/* THIS REFERS TO THE JAVA FUNCTION THAT I DIDN'T GET TO WORK */
+
+/* .imgclass {
     opacity: 1;
     transition: opacity 0.5s ease-out;
 }
 
 .clicked {
     opacity: 0.5;
-}
+} */
