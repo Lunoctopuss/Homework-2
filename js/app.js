@@ -76,3 +76,7 @@ function funcImg(value) {
 
     div.innerHTML = text;
 }
+
+// TASK 4
+
+// RAN OUT OF TIME FOR THIS ONE
