@@ -48,24 +48,6 @@ initialPrompt();
 // TASK 3
 
 
-// TRIED TO ADD/REMOVE CLASS BUT FAILED.
-
-// function funcImg(element) {
-//         const innerImage = element.querySelector('img');
-//     if (innerImage) {
-//         if (innerImage.classList.contains('clicked')) {
-//     innerImage.classList.remove('clicked');
-//     }
-//     else {
-//         innerImage.classList.add('clicked');
-//         }
-//     }
-// }
-
-
-// USED THIS INSTEAD: https://stackoverflow.com/questions/20147442/using-onclick-on-images-to-display-text
-
-
 function funcImg(value) {
     const div = document.getElementById("div");
     let text = "";
@@ -76,7 +58,3 @@ function funcImg(value) {
 
     div.innerHTML = text;
 }
-
-// TASK 4
-
-// RAN OUT OF TIME FOR THIS ONE
